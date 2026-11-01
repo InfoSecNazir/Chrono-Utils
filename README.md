@@ -1,41 +1,38 @@
-# ChronoCore-CPP 🕰️
+# Chrono-Utils
 
-مكتبة C++ شاملة وقوية للتعامل المتقدم مع التاريخ والوقت
+[English](README.md) · [العربية](README_AR.md) · [File index](docs/INDEX.md)
 
----
+C++ date utility library and console examples for date operations.
 
-## 📖 حول المشروع (About The Project)
+## Repository contents
 
-**ChronoCore-CPP** ليست مجرد مكتبة للتعامل مع التاريخ، بل هي تجسيد لفلسفة الهيمنة على مفاهيم البرمجة بلغة C++. وُلد هذا المشروع من الشغف بالبرمجة الكائنية (OOP) والسعي لبناء أداة لا تتميز فقط بوظائفها الشاملة، بل أيضاً بكفاءتها وتصميمها النظيف.
+- [clData.h](clData.h)
+- [DateNexu.cpp](DateNexu.cpp)
+- [ShouliotionProfssoer.cpp](ShouliotionProfssoer.cpp)
+- [RateMyProfessor.h](RateMyProfessor.h)
 
-المكتبة مصممة لتكون نواة (Core) لأي تطبيق يحتاج إلى عمليات دقيقة ومعقدة على الزمن (Chrono)، مقدمة واجهة برمجية (API) سهلة الاستخدام ومبنية بالكامل من الصفر.
+## Setup and use
 
----
+`DateNexu.cpp` includes `clData.h` and is the primary date demonstration. Build it separately from the other example:
 
-## ✨ الميزات الرئيسية (Key Features)
+```bat
+cl /EHsc /std:c++17 DateNexu.cpp /Fe:chrono.exe
+```
 
-- بنية كائنية التوجه (OOP) لتسهيل التصميم والتوسعة.
-- عمليات حسابية متقدمة: جمع وطرح أيام، أسابيع، أشهر، سنوات، عقود، وقرون.
-- تحميل زائد للمعاملات: دعم لمقارنات (`<`, `>`, `==`, `<=`, `>=`) والزيادة/النقصان (`++`, `--`).
-- أدوات مساعدة (static utilities): فحص السنة الكبيسة، عدد أيام الشهر، تحويل الصيغ، إلخ.
-- طباعة تقاويم شهرية وسنوية (Calendar printing).
-- تحليل الفترات الزمنية: تقاطع فترتين، حساب طول فترة، إلخ.
-- تحويل التواريخ من/إلى نصوص مع دعم صيغ متعددة.
-- دوال استعلام على التاريخ (هل يوم عطلة؟ هل آخر يوم في الشهر؟ ...).
+`ShouliotionProfssoer.cpp` includes `Data.h`, which is absent from the committed tree; restore or correct that dependency before building that example.
 
----
+The console code uses Windows commands such as `cls` or `pause`; Windows is the intended environment. Build commands below describe the source entry point and have not been compiled as part of this documentation update.
 
-## 🚀 البدء (Getting Started)
+[Previous documentation and additional details](README_DETAILS.md)
 
-### المتطلبات (Prerequisites)
-- مترجم C++ يدعم C++17 أو أحدث (مثل `g++`, `clang++`).
-- نظام بناء بسيط (اختياري): `make`, CMake أو بناء يدوي.
+## License
 
-### التثبيت (Installation / Quick Start)
-1. انسخ ملفات المكتبة (`clData.h`, `clData.cpp` أو `Date.h` وملف المصدر) إلى مجلد المشروع.
-2. قم بإضافة مسار الملفات عند البناء أو ضعها في مجلد `include/`.
+The repository currently has no root license file. This documentation does not assign a new license.
 
-### تجميع بسيط (مثال)
-```bash
-g++ -std=c++17 -I./include ./src/main.cpp ./src/clData.cpp -o chrono_app
-./chrono_app
+## Contributing and navigation
+
+[CONTRIBUTING.md](CONTRIBUTING.md) · [Documentation index](docs/INDEX.md) · [Public project index](https://github.com/InfoSecNazir/InfoSecNazir/blob/main/PROJECTS.md)
+
+## Verification scope
+
+Repository organization checked file paths, documentation links, and available dependency manifests. This update did not run or deploy the application.
